@@ -12,6 +12,8 @@ import StreamVideoSwiftUI
 struct ConnectView: View {
     @State var participants: [(id: Int, name: String)]
 
+    @State var requested: [Int] = []
+
     @AppStorage("app.id") var id: Int?
 
     var body: some View {
@@ -32,9 +34,9 @@ struct ConnectView: View {
                             ForEach(participants, id: \.id) { participant in
                                 Button {
                                     Task {
-                                        if let id {
+                                        if let id, !requested.contains(participant.id) {
                                             await APIManager.shared.connect(id: id, otherId: participant.id)
-                                            
+                                            requested.append(participant.id)
                                         }
                                     }
                                 } label: {
@@ -44,11 +46,15 @@ struct ConnectView: View {
                                             Text("Waiting...").foregroundStyle(Color(uiColor: .secondaryLabel))
                                         }
                                         Spacer()
-                                        Image(systemName: "checkmark.circle").font(.system(size: 20))
+                                        if requested.contains(participant.id) {
+                                            Image(systemName: "checkmark.circle").font(.system(size: 20))
+                                        } else {
+                                            Image(systemName: "person.badge.plus").font(.system(size: 20))
+                                        }
                                     }.frame(maxWidth: .infinity, idealHeight: 50)
                                         .padding(10)
                                         .background(Color(uiColor: .secondarySystemBackground))
-                                }
+                                }.foregroundStyle(Color.black)
                             }.frame(maxWidth: .infinity)
                         }.frame(maxWidth: .infinity)
                             .clipShape(RoundedRectangle(cornerRadius: 15))
@@ -56,9 +62,7 @@ struct ConnectView: View {
                     Spacer(minLength: 40)
                     Text("You've kicked it 1 day in a row!").font(.headline).bold()
                     Spacer(minLength: 40)
-                    Button {
-                        print("done")
-                    } label: {
+                    NavigationLink(destination: HomeView()) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 15).fill(Color.black)
                             Text("Finish")
