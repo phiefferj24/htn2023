@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		371C07782AB5D6EB00D757F5 /* HTN2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C07772AB5D6EB00D757F5 /* HTN2023App.swift */; };
+		371C077A2AB5D6EB00D757F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C07792AB5D6EB00D757F5 /* ContentView.swift */; };
+		371C077C2AB5D6ED00D757F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371C077B2AB5D6ED00D757F5 /* Assets.xcassets */; };
+		371C077F2AB5D6ED00D757F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371C077E2AB5D6ED00D757F5 /* Preview Assets.xcassets */; };
+		371C07872AB5DCC000D757F5 /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 371C07862AB5DCC000D757F5 /* StreamVideo */; };
+		371C07892AB5DCC000D757F5 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 371C07882AB5DCC000D757F5 /* StreamVideoSwiftUI */; };
+		371C078B2AB5DCC000D757F5 /* StreamVideoUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 371C078A2AB5DCC000D757F5 /* StreamVideoUIKit */; };
+		371C078E2AB5DD2100D757F5 /* VideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C078D2AB5DD2100D757F5 /* VideoCallView.swift */; };
+		371C07912AB5E9AF00D757F5 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C07902AB5E9AF00D757F5 /* CallManager.swift */; };
+		371C07932AB6084300D757F5 /* VideoParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C07922AB6084300D757F5 /* VideoParticipantView.swift */; };
+		371C07952AB61D6200D757F5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C07942AB61D6100D757F5 /* APIManager.swift */; };
+		371C07972AB6250F00D757F5 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C07962AB6250F00D757F5 /* ConnectView.swift */; };
+		372A754E2AB63DFB00C14E3D /* LoginWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A754D2AB63DFB00C14E3D /* LoginWelcomeView.swift */; };
+		372A75502AB643B400C14E3D /* LoginNameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A754F2AB643B400C14E3D /* LoginNameInputView.swift */; };
+		372A75522AB6478600C14E3D /* LoginBirthdayInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A75512AB6478600C14E3D /* LoginBirthdayInputView.swift */; };
+		372A75542AB6479E00C14E3D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A75532AB6479E00C14E3D /* LoginViewModel.swift */; };
+		372A75562AB64FA900C14E3D /* LoginPhoneInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A75552AB64FA900C14E3D /* LoginPhoneInputView.swift */; };
+		372A75582AB651C600C14E3D /* LoginCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A75572AB651C600C14E3D /* LoginCodeInputView.swift */; };
+		372A755A2AB668BB00C14E3D /* CollegeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A75592AB668BB00C14E3D /* CollegeList.swift */; };
+		372A755C2AB66A7400C14E3D /* LoginCollegeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A755B2AB66A7400C14E3D /* LoginCollegeInputView.swift */; };
+		377BA08A2AB6CA480085794C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 377BA0892AB6CA480085794C /* icon.png */; };
+		377BA08C2AB6CC370085794C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377BA08B2AB6CC370085794C /* HomeView.swift */; };
+		377BA08E2AB6D0140085794C /* LobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377BA08D2AB6D0140085794C /* LobbyView.swift */; };
+		377BA0902AB6F4E60085794C /* MyCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377BA08F2AB6F4E60085794C /* MyCallView.swift */; };
+		377BA0922AB6FE150085794C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377BA0912AB6FE150085794C /* ProfileView.swift */; };
+		377BA0972AB702F50085794C /* tiktok.png in Resources */ = {isa = PBXBuildFile; fileRef = 377BA0932AB702F50085794C /* tiktok.png */; };
+		377BA0982AB702F50085794C /* snapchat.png in Resources */ = {isa = PBXBuildFile; fileRef = 377BA0942AB702F50085794C /* snapchat.png */; };
+		377BA0992AB702F50085794C /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 377BA0952AB702F50085794C /* instagram.png */; };
+		377BA09A2AB702F50085794C /* x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 377BA0962AB702F50085794C /* x.jpeg */; };
+		378F2E5F2AB67DDF007CFB16 /* LoginInterestInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F2E5E2AB67DDF007CFB16 /* LoginInterestInputView.swift */; };
+		378F2E612AB67EDE007CFB16 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F2E602AB67EDE007CFB16 /* FlowLayout.swift */; };
+		378F2E632AB695DC007CFB16 /* LoginSocialsInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F2E622AB695DC007CFB16 /* LoginSocialsInputView.swift */; };
+		378F2E652AB69D7E007CFB16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F2E642AB69D7E007CFB16 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		371C07742AB5D6EB00D757F5 /* HTN2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTN2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		371C07772AB5D6EB00D757F5 /* HTN2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTN2023App.swift; sourceTree = "<group>"; };
+		371C07792AB5D6EB00D757F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		371C077B2AB5D6ED00D757F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		371C077E2AB5D6ED00D757F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		371C078D2AB5DD2100D757F5 /* VideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallView.swift; sourceTree = "<group>"; };
+		371C07902AB5E9AF00D757F5 /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		371C07922AB6084300D757F5 /* VideoParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoParticipantView.swift; sourceTree = "<group>"; };
+		371C07942AB61D6100D757F5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		371C07962AB6250F00D757F5 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		372A754D2AB63DFB00C14E3D /* LoginWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWelcomeView.swift; sourceTree = "<group>"; };
+		372A754F2AB643B400C14E3D /* LoginNameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNameInputView.swift; sourceTree = "<group>"; };
+		372A75512AB6478600C14E3D /* LoginBirthdayInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBirthdayInputView.swift; sourceTree = "<group>"; };
+		372A75532AB6479E00C14E3D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		372A75552AB64FA900C14E3D /* LoginPhoneInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPhoneInputView.swift; sourceTree = "<group>"; };
+		372A75572AB651C600C14E3D /* LoginCodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCodeInputView.swift; sourceTree = "<group>"; };
+		372A75592AB668BB00C14E3D /* CollegeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeList.swift; sourceTree = "<group>"; };
+		372A755B2AB66A7400C14E3D /* LoginCollegeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCollegeInputView.swift; sourceTree = "<group>"; };
+		377BA0892AB6CA480085794C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		377BA08B2AB6CC370085794C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		377BA08D2AB6D0140085794C /* LobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyView.swift; sourceTree = "<group>"; };
+		377BA08F2AB6F4E60085794C /* MyCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCallView.swift; sourceTree = "<group>"; };
+		377BA0912AB6FE150085794C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		377BA0932AB702F50085794C /* tiktok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tiktok.png; path = ../../../Downloads/tiktok.png; sourceTree = "<group>"; };
+		377BA0942AB702F50085794C /* snapchat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snapchat.png; path = ../../../Downloads/snapchat.png; sourceTree = "<group>"; };
+		377BA0952AB702F50085794C /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = instagram.png; path = ../../../Downloads/instagram.png; sourceTree = "<group>"; };
+		377BA0962AB702F50085794C /* x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = x.jpeg; path = ../../../Downloads/x.jpeg; sourceTree = "<group>"; };
+		378F2E5E2AB67DDF007CFB16 /* LoginInterestInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterestInputView.swift; sourceTree = "<group>"; };
+		378F2E602AB67EDE007CFB16 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		378F2E622AB695DC007CFB16 /* LoginSocialsInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSocialsInputView.swift; sourceTree = "<group>"; };
+		378F2E642AB69D7E007CFB16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		378F2E662AB69E16007CFB16 /* HTN2023.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HTN2023.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		371C07712AB5D6EB00D757F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371C07892AB5DCC000D757F5 /* StreamVideoSwiftUI in Frameworks */,
+				371C078B2AB5DCC000D757F5 /* StreamVideoUIKit in Frameworks */,
+				371C07872AB5DCC000D757F5 /* StreamVideo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		371C076B2AB5D6EB00D757F5 = {
+			isa = PBXGroup;
+			children = (
+				371C07762AB5D6EB00D757F5 /* HTN2023 */,
+				371C07752AB5D6EB00D757F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		371C07752AB5D6EB00D757F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				371C07742AB5D6EB00D757F5 /* HTN2023.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		371C07762AB5D6EB00D757F5 /* HTN2023 */ = {
+			isa = PBXGroup;
+			children = (
+				377BA0932AB702F50085794C /* tiktok.png */,
+				377BA0952AB702F50085794C /* instagram.png */,
+				377BA0942AB702F50085794C /* snapchat.png */,
+				377BA0962AB702F50085794C /* x.jpeg */,
+				377BA0892AB6CA480085794C /* icon.png */,
+				378F2E662AB69E16007CFB16 /* HTN2023.entitlements */,
+				371C078F2AB5E9A300D757F5 /* Shared */,
+				371C078C2AB5DCF000D757F5 /* Views */,
+				371C07772AB5D6EB00D757F5 /* HTN2023App.swift */,
+				371C07792AB5D6EB00D757F5 /* ContentView.swift */,
+				371C077B2AB5D6ED00D757F5 /* Assets.xcassets */,
+				371C077D2AB5D6ED00D757F5 /* Preview Content */,
+				378F2E642AB69D7E007CFB16 /* AppDelegate.swift */,
+			);
+			path = HTN2023;
+			sourceTree = "<group>";
+		};
+		371C077D2AB5D6ED00D757F5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				371C077E2AB5D6ED00D757F5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		371C078C2AB5DCF000D757F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				372A754C2AB63DB600C14E3D /* Login */,
+				371C078D2AB5DD2100D757F5 /* VideoCallView.swift */,
+				371C07922AB6084300D757F5 /* VideoParticipantView.swift */,
+				371C07962AB6250F00D757F5 /* ConnectView.swift */,
+				378F2E602AB67EDE007CFB16 /* FlowLayout.swift */,
+				377BA08B2AB6CC370085794C /* HomeView.swift */,
+				377BA08D2AB6D0140085794C /* LobbyView.swift */,
+				377BA08F2AB6F4E60085794C /* MyCallView.swift */,
+				377BA0912AB6FE150085794C /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		371C078F2AB5E9A300D757F5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				371C07902AB5E9AF00D757F5 /* CallManager.swift */,
+				371C07942AB61D6100D757F5 /* APIManager.swift */,
+				372A75592AB668BB00C14E3D /* CollegeList.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		372A754C2AB63DB600C14E3D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				372A75532AB6479E00C14E3D /* LoginViewModel.swift */,
+				372A754D2AB63DFB00C14E3D /* LoginWelcomeView.swift */,
+				372A75552AB64FA900C14E3D /* LoginPhoneInputView.swift */,
+				372A75572AB651C600C14E3D /* LoginCodeInputView.swift */,
+				372A754F2AB643B400C14E3D /* LoginNameInputView.swift */,
+				372A75512AB6478600C14E3D /* LoginBirthdayInputView.swift */,
+				372A755B2AB66A7400C14E3D /* LoginCollegeInputView.swift */,
+				378F2E5E2AB67DDF007CFB16 /* LoginInterestInputView.swift */,
+				378F2E622AB695DC007CFB16 /* LoginSocialsInputView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		371C07732AB5D6EB00D757F5 /* HTN2023 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 371C07822AB5D6ED00D757F5 /* Build configuration list for PBXNativeTarget "HTN2023" */;
+			buildPhases = (
+				371C07702AB5D6EB00D757F5 /* Sources */,
+				371C07712AB5D6EB00D757F5 /* Frameworks */,
+				371C07722AB5D6EB00D757F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTN2023;
+			packageProductDependencies = (
+				371C07862AB5DCC000D757F5 /* StreamVideo */,
+				371C07882AB5DCC000D757F5 /* StreamVideoSwiftUI */,
+				371C078A2AB5DCC000D757F5 /* StreamVideoUIKit */,
+			);
+			productName = HTN2023;
+			productReference = 371C07742AB5D6EB00D757F5 /* HTN2023.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		371C076C2AB5D6EB00D757F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					371C07732AB5D6EB00D757F5 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 371C076F2AB5D6EB00D757F5 /* Build configuration list for PBXProject "HTN2023" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 371C076B2AB5D6EB00D757F5;
+			packageReferences = (
+				371C07852AB5DCC000D757F5 /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+			);
+			productRefGroup = 371C07752AB5D6EB00D757F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				371C07732AB5D6EB00D757F5 /* HTN2023 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		371C07722AB5D6EB00D757F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377BA0982AB702F50085794C /* snapchat.png in Resources */,
+				377BA08A2AB6CA480085794C /* icon.png in Resources */,
+				377BA0992AB702F50085794C /* instagram.png in Resources */,
+				377BA09A2AB702F50085794C /* x.jpeg in Resources */,
+				371C077F2AB5D6ED00D757F5 /* Preview Assets.xcassets in Resources */,
+				377BA0972AB702F50085794C /* tiktok.png in Resources */,
+				371C077C2AB5D6ED00D757F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		371C07702AB5D6EB00D757F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371C07952AB61D6200D757F5 /* APIManager.swift in Sources */,
+				372A755A2AB668BB00C14E3D /* CollegeList.swift in Sources */,
+				378F2E652AB69D7E007CFB16 /* AppDelegate.swift in Sources */,
+				378F2E632AB695DC007CFB16 /* LoginSocialsInputView.swift in Sources */,
+				372A75502AB643B400C14E3D /* LoginNameInputView.swift in Sources */,
+				377BA08E2AB6D0140085794C /* LobbyView.swift in Sources */,
+				372A75542AB6479E00C14E3D /* LoginViewModel.swift in Sources */,
+				372A754E2AB63DFB00C14E3D /* LoginWelcomeView.swift in Sources */,
+				371C07972AB6250F00D757F5 /* ConnectView.swift in Sources */,
+				372A75562AB64FA900C14E3D /* LoginPhoneInputView.swift in Sources */,
+				372A75522AB6478600C14E3D /* LoginBirthdayInputView.swift in Sources */,
+				372A75582AB651C600C14E3D /* LoginCodeInputView.swift in Sources */,
+				378F2E612AB67EDE007CFB16 /* FlowLayout.swift in Sources */,
+				378F2E5F2AB67DDF007CFB16 /* LoginInterestInputView.swift in Sources */,
+				377BA08C2AB6CC370085794C /* HomeView.swift in Sources */,
+				371C077A2AB5D6EB00D757F5 /* ContentView.swift in Sources */,
+				371C07932AB6084300D757F5 /* VideoParticipantView.swift in Sources */,
+				377BA0922AB6FE150085794C /* ProfileView.swift in Sources */,
+				372A755C2AB66A7400C14E3D /* LoginCollegeInputView.swift in Sources */,
+				377BA0902AB6F4E60085794C /* MyCallView.swift in Sources */,
+				371C07782AB5D6EB00D757F5 /* HTN2023App.swift in Sources */,
+				371C078E2AB5DD2100D757F5 /* VideoCallView.swift in Sources */,
+				371C07912AB5E9AF00D757F5 /* CallManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		371C07802AB5D6ED00D757F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		371C07812AB5D6ED00D757F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		371C07832AB5D6ED00D757F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HTN2023/HTN2023.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HTN2023/Preview Content\"";
+				DEVELOPMENT_TEAM = V4VMBJ7UGG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Kickback;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We require camera access in order to capture and transmit video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We require microphone access in order to capture and transmit voice.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimphieffer.HTN2023;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		371C07842AB5D6ED00D757F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HTN2023/HTN2023.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HTN2023/Preview Content\"";
+				DEVELOPMENT_TEAM = V4VMBJ7UGG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Kickback;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We require camera access in order to capture and transmit video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We require microphone access in order to capture and transmit voice.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimphieffer.HTN2023;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		371C076F2AB5D6EB00D757F5 /* Build configuration list for PBXProject "HTN2023" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371C07802AB5D6ED00D757F5 /* Debug */,
+				371C07812AB5D6ED00D757F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		371C07822AB5D6ED00D757F5 /* Build configuration list for PBXNativeTarget "HTN2023" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371C07832AB5D6ED00D757F5 /* Debug */,
+				371C07842AB5D6ED00D757F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		371C07852AB5DCC000D757F5 /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		371C07862AB5DCC000D757F5 /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 371C07852AB5DCC000D757F5 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideo;
+		};
+		371C07882AB5DCC000D757F5 /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 371C07852AB5DCC000D757F5 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoSwiftUI;
+		};
+		371C078A2AB5DCC000D757F5 /* StreamVideoUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 371C07852AB5DCC000D757F5 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 371C076C2AB5D6EB00D757F5 /* Project object */;
+}
